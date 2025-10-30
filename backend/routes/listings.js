@@ -15,7 +15,7 @@ router.delete('/:id', (req, res) => {
     res.json({msg: "Deleting from posts!"});
 });
 
-router.update('/:id', (req, res) => {
+router.patch('/:id', (req, res) => {
     res.json({msg: "Updating posts!"});
 });
 
