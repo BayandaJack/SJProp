@@ -1,12 +1,12 @@
 const express = require('express');
-const { createProperty, getAllProperties } = require('../controllers/PropertyController');
+const { createUser } = require('../controllers/UserController');
 
 //
 const router = express.Router();
 
-router.get('/', getAllProperties);
+//router.get('/', getAllProperties);
 
-router.post('/post', createProperty);
+router.post('/post', createUser);
 
 router.delete('/:id', (req, res) => {
     res.json({msg: "Deleting from posts!"});
