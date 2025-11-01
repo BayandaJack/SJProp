@@ -5,7 +5,11 @@ require('dotenv').config()
 const express = require('express');
 const mongoose = require('mongoose');
 
+
+//all routers
 const listingRoutes = require('./routes/listings');
+const userRoutes = require('./routes/users');
+
 
 //create instance of express - express app
 const app = express();
@@ -20,6 +24,8 @@ app.use((req, res, next) => {
 })
 
 app.use('/api/listings', listingRoutes);
+
+app.use('/api/users', userRoutes);
 
 app.get('/', (req, res) => {
     res.json({msg: "Hello world"});

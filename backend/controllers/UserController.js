@@ -1,6 +1,14 @@
 const user = require('../schemas/UserSchema');
 
 //get all users
+const getAllUsers = async (req, res) => {
+    try {
+        const AllUsers = await user.find();
+        res.status(200).json(AllUsers);
+    } catch (error) {
+        res.status(400).json({error: error.message});
+    }
+}
 
 
 //get a single user
@@ -29,4 +37,4 @@ const createUser = async (req, res) => {
 //delete a user
 
 //export function for use elsewhere
-module.exports = { createUser };
+module.exports = { createUser, getAllUsers };
