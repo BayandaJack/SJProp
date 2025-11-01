@@ -1,20 +1,18 @@
 const express = require('express');
-const { createProperty, getAllProperties } = require('../controllers/PropertyController');
+const { createProperty, getAllProperties, getProperty, deleteProperty, updateProperty } = require('../controllers/PropertyController');
 
 //
 const router = express.Router();
 
 router.get('/', getAllProperties);
 
+router.get('/:id', getProperty);
+
 router.post('/post', createProperty);
 
-router.delete('/:id', (req, res) => {
-    res.json({msg: "Deleting from posts!"});
-});
+router.delete('/:id', deleteProperty);
 
-router.patch('/:id', (req, res) => {
-    res.json({msg: "Updating posts!"});
-});
+router.patch('/:id', updateProperty);
 
 
 module.exports = router;
