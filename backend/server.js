@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 
 //all routers
-const listingRoutes = require('./routes/listings');
+const propertyRoutes = require('./routes/properties');
 const userRoutes = require('./routes/users');
 
 
@@ -23,7 +23,7 @@ app.use((req, res, next) => {
     next(); //moves to endpoint
 })
 
-app.use('/api/listings', listingRoutes);
+app.use('/api/properties', propertyRoutes);
 
 app.use('/api/users', userRoutes);
 
