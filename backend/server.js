@@ -7,8 +7,8 @@ const mongoose = require('mongoose');
 
 
 //all routers
-const propertyRoutes = require('./routes/properties');
-const userRoutes = require('./routes/users');
+const propertyRoutes = require('./routes/property');
+const userRoutes = require('./routes/user');
 
 
 //create instance of express - express app
