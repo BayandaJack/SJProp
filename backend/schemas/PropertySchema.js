@@ -39,10 +39,6 @@ const PropertySchema = new Schema({
         size: {
             type: Number, 
             required: false
-        },
-        furnished: {
-            type: Boolean,
-            default: false
         }
     }
 }, { timestamps: true});
