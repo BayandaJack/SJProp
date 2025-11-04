@@ -1,0 +1,9 @@
+export default function HeroBanner(){
+    return (
+        <section className="relative h-[80vh] bg-cover bg-center text-white" style={{ backgroundImage: "url('/banner.jpeg')" }}>
+            <div className="relative z-10 flex flex-col items-center justify-center h-full">
+                <h1 className="text-4xl font-bold">Find Your Dream Home</h1>
+            </div>
+        </section>
+    );
+}
