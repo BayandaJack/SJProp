@@ -5,7 +5,7 @@ export default function ListingsCard(){
 
 
     return (
-        <div className="flex flex-row m-4 gap-2 bg-blue-50 w-5xl rounded-md p-4">
+        <div className="flex flex-row m-4 gap-2 bg-blue-50 border-amber-700 border-2 w-5xl rounded-md p-4">
             <ListingsImage />
             <ListingsDetails />
         </div>
