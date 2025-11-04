@@ -8,7 +8,6 @@ export default function Listings(){
             <ListingsCard />
             <ListingsCard />
             <ListingsCard />
-            <HeroBanner />
         </>
     );
 }
