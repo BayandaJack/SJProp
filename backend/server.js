@@ -4,15 +4,22 @@ require('dotenv').config()
 //first get express functionality
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 
 //all routers
 const propertyRoutes = require('./routes/property');
 const userRoutes = require('./routes/user');
 
-
 //create instance of express - express app
 const app = express();
+
+//enable cors for frontend to communicate with backend
+app.use(cors({
+  origin: 'http://localhost:5173', // frontend's origin
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+  credentials: true
+}));
 
 //allows req body to go through middleware
 app.use(express.json());
