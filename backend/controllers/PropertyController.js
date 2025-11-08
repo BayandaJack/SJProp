@@ -23,11 +23,12 @@ const getProperty = async (req, res) => {
 
 //create a new property
 const createProperty = async (req, res) => {
-    const { title, description, type, features } = req.body;
+    const { title, price, description, type, features } = req.body;
     //post to database
     try {
         const newProperty = await property.create({
             title,
+            price,
             description,
             type,
             features

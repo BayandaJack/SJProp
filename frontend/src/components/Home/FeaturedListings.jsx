@@ -62,11 +62,19 @@ export default function FeaturedListings(){
   if (loading){
     return (
       <>
+        <h1 className="text-4xl font-bold text-red-500">Featured Listings</h1>
         <p>Loading featured listings...</p>
       </>
     );
   }
-  if (listings.length === 0) return <p>No listings found.</p>;
+  if (listings.length === 0){
+    return (
+      <>
+        <h1 className="text-4xl font-bold text-red-500">Featured Listings</h1>
+        <p>No listings found.</p>
+      </>
+    );
+  }
 
 
   return (

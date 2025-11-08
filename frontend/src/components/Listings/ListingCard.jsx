@@ -6,7 +6,7 @@ export default function ListingsCard({listing}){
     const listingdetails = {
         id: listing._id,
         title: listing.title,
-        //price: listing.price,
+        price: listing.price,
         bedrooms: listing.features.bedrooms,
         bathrooms: listing.features.bathrooms,
         size: listing.features.size
