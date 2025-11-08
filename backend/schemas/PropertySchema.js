@@ -44,6 +44,10 @@ const PropertySchema = new Schema({
             type: Number, 
             required: false
         }
+    },
+    images: {
+        type: [String],
+        required: false
     }
 }, { timestamps: true});
 
