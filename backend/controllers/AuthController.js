@@ -1,15 +1,17 @@
-const AuthLogin = async (req, res) => {
+const AuthLogin = (req, res) => {
     res.render('login');
 }
 
-const AuthLogout = async (req, res) => {
+const AuthLogout = (req, res) => {
     //handle with passport
     res.send('logging out');
 }
 
-const SignUpWithGoogle = async (req, res) => {
-    //handle with passport
-    res.send('logginf in with google');
+
+const GoogleCallBack = (req, res) => {
+    console.log("Callback reached...")
+    //res.redirect("http://localhost:5173/"); 
+    res.send('You have reached the voicemail lite service of...');
 }
 
-module.exports = { AuthLogin, SignUpWithGoogle, AuthLogout }
+module.exports = { AuthLogin, AuthLogout, GoogleCallBack }
