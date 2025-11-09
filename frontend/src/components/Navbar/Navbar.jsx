@@ -13,6 +13,15 @@ export default function Navbar(){
                     <Link to="/listings">
                         Listings
                     </Link>
+                    <Link to="/about">
+                        About
+                    </Link>
+                    <Link to="/contact">
+                        Contact
+                    </Link>
+                    <Link to="/login">
+                        LogIn
+                    </Link>
                 </nav>
             </div>
         </div>
