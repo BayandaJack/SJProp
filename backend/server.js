@@ -10,6 +10,7 @@ const cors = require('cors');
 //all routers
 const propertyRoutes = require('./routes/property');
 const userRoutes = require('./routes/user');
+const AuthRoutes = require('./routes/auth');
 
 //create instance of express - express app
 const app = express();
@@ -34,9 +35,7 @@ app.use('/api/properties', propertyRoutes);
 
 app.use('/api/users', userRoutes);
 
-app.get('/', (req, res) => {
-    res.json({msg: "Hello world"});
-});
+app.use('/auth', AuthRoutes);
 
 //connect to db with mongoose
 mongoose.connect(process.env.MONGO_URI)

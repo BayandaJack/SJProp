@@ -19,7 +19,7 @@ export default function Navbar(){
                     <Link to="/contact">
                         Contact
                     </Link>
-                    <Link to="/login">
+                    <Link to="/auth/login">
                         LogIn
                     </Link>
                 </nav>

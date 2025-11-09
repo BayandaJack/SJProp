@@ -27,7 +27,7 @@ function App() {
             path='/contact'
             element={<ContactUs />}/>
           <Route 
-            path='/login'
+            path='/auth/login'
             element={<Login />}/>
         </Route>
       </Routes>
