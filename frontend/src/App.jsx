@@ -7,6 +7,7 @@ import About from './pages/About'
 import ContactUs from './pages/ContactUs'
 import { LogIn } from 'lucide-react'
 import Login from './pages/Login'
+import AddProperty from './pages/AddProperty'
 
 function App() {
 
@@ -29,6 +30,9 @@ function App() {
           <Route 
             path='/auth/login'
             element={<Login />}/>
+          <Route 
+            path='/addproperty'
+            element={<AddProperty />}/>
         </Route>
       </Routes>
     </BrowserRouter>

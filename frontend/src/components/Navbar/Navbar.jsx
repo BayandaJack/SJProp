@@ -22,6 +22,9 @@ export default function Navbar(){
                     <Link to="/auth/login">
                         LogIn
                     </Link>
+                    <Link to="/addproperty">
+                        AddProperty
+                    </Link>
                 </nav>
             </div>
         </div>
