@@ -2,6 +2,16 @@ import { useState } from "react";
 
 export default function PropDetailsForm(){
     const [images, setImages] = useState([]);
+    const [title, setTitle] = useState("");
+    const [price, setPrice] = useState("");
+    const [description, setDescription] = useState("");
+    const [type, setType] = useState("");
+    const [beds, setBeds] = useState("");
+    const [baths, setBaths] = useState("");
+    const [size, setSize] = useState("");
+    const [garages, setGarages] = useState("");
+
+
 
     function handleFileChange(e) {
         setImages([...e.target.files]);
@@ -22,12 +32,16 @@ export default function PropDetailsForm(){
                 type="text"
                 placeholder="Title"
                 className="w-full px-4 py-2 border rounded-md"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
             />
 
             <textarea
                 placeholder="Description"
                 className="w-full px-4 py-2 border rounded-md mt-3"
                 rows="4"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
             />
 
             <select className="w-full px-4 py-2 border rounded-md mt-3">
@@ -43,10 +57,38 @@ export default function PropDetailsForm(){
             <h2 className="text-xl font-semibold mb-2">Features</h2>
 
             <div className="grid grid-cols-2 gap-4">
-                <input type="number" placeholder="Bedrooms" className="px-4 py-2 border rounded-md" />
-                <input type="number" placeholder="Bathrooms" className="px-4 py-2 border rounded-md" />
-                <input type="number" placeholder="Garages" className="px-4 py-2 border rounded-md" />
-                <input type="number" placeholder="Size (m²)" className="px-4 py-2 border rounded-md" />
+                <input 
+                    type="number" 
+                    placeholder="Bedrooms" 
+                    className="px-4 py-2 border rounded-md" 
+                    value={beds}
+                    onChange={(e) => setBeds(e.target.value)}
+                />
+
+                <input 
+                    type="number" 
+                    placeholder="Bathrooms" 
+                    className="px-4 py-2 border rounded-md" 
+                    value={baths}
+                    onChange={(e) => setBaths(e.target.value)}
+                />
+
+                <input 
+                    type="number" 
+                    placeholder="Garages" 
+                    className="px-4 py-2 border rounded-md" 
+                    value={garages}
+                    onChange={(e) => setGarages(e.target.value)}
+                />
+
+                <input 
+                    type="number" 
+                    placeholder="Size (m²)" 
+                    className="px-4 py-2 border rounded-md" 
+                    value={size}
+                    onChange={(e) => setSize(e.target.value)}
+                />
+                
             </div>
 
             <label className="flex items-center gap-2 mt-3">
@@ -58,6 +100,8 @@ export default function PropDetailsForm(){
                 type="number"
                 placeholder="Price (R)"
                 className="w-full px-4 py-2 border rounded-md mt-3"
+                onChange={(e) => setPrice(e.target.value)}
+                value={price}
             />
             </div>
 
