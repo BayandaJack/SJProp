@@ -7,20 +7,17 @@ export default function Navbar(){
             <NavbarImage />
             <div className="flex flex-row justify-end items-center w-full">
                 <nav className="flex gap-3 text-white font-medium text-lg">
-                    <Link to="/">
+                    <Link className="border border-amber-50 rounded-lg p-2" to="/">
                         Home
                     </Link>
-                    <Link to="/listings">
+                    <Link className="border border-amber-50 rounded-lg p-2" to="/listings">
                         Listings
                     </Link>
-                    <Link to="/about">
+                    <Link className="border border-amber-50 rounded-lg p-2" to="/about">
                         About
                     </Link>
-                    <Link to="/contact">
+                    <Link className="border border-amber-50 rounded-lg p-2" to="/contact">
                         Contact
-                    </Link>
-                    <Link to="/auth/login">
-                        LogIn
                     </Link>
                 </nav>
             </div>

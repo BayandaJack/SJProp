@@ -5,7 +5,6 @@ import Listings from './pages/Listings'
 import Layout from './components/Layout/Layout'
 import About from './pages/About'
 import ContactUs from './pages/ContactUs'
-import Login from './pages/Login'
 
 function App() {
 
@@ -25,9 +24,6 @@ function App() {
           <Route 
             path='/contact'
             element={<ContactUs />}/>
-          <Route 
-            path='/auth/login'
-            element={<Login />}/>
         </Route>
       </Routes>
     </BrowserRouter>

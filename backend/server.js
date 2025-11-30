@@ -5,13 +5,11 @@ require('dotenv').config()
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const passportSetup = require('./config/passport.config');
 
 
 //all routers
 const propertyRoutes = require('./routes/property');
 const userRoutes = require('./routes/user');
-const AuthRoutes = require('./routes/auth');
 
 //create instance of express - express app
 const app = express();
@@ -35,8 +33,6 @@ app.use((req, res, next) => {
 app.use('/api/properties', propertyRoutes);
 
 app.use('/api/users', userRoutes);
-
-app.use('/auth', AuthRoutes);
 
 //connect to db with mongoose
 mongoose.connect(process.env.MONGO_URI)

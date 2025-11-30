@@ -3,16 +3,16 @@ import PromiseCard from "../components/DisplayCards/PromiseCard";
 export default function About() {
     return (
         <div className="bg-white min-h-screen py-10 px-4 md:px-20">
-            <h1 className="text-5xl font-extrabold text-center text-red-600 mb-8">About SJProp</h1>
+            <h1 className="text-5xl font-extrabold text-center text-red-600 mb-8">About SJ Properties</h1>
 
             {/* Who Are We */}
             <section className="flex flex-col md:flex-row gap-8 items-center mb-12">
                 <div className="md:w-2/3 bg-gray-100 rounded-lg shadow-md p-8">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4">Who Are We?</h2>
                     <p className="text-lg text-gray-700">
-                        At <span className="font-semibold text-red-500">SJProp</span>, we believe that finding the perfect property should be an exciting and seamless experience. Founded by <span className="font-semibold">Samson Jack</span>, our agency is built on a foundation of trust, integrity, and a genuine passion for helping people achieve their real estate dreams. Whether you’re searching for your first home, a new investment, or a place to grow your business, SJProp is dedicated to guiding you every step of the way.<br /><br />
-                        Our team combines deep local expertise with a commitment to personalized service, ensuring that every client feels valued and understood. We pride ourselves on transparency, professionalism, and a relentless drive to deliver results that exceed expectations. At SJProp, your goals become our mission.<br /><br />
-                        Discover the difference with SJProp—where your property journey begins.
+                        At <span className="font-semibold text-red-500">SJ Properties</span>, we believe that finding the perfect property should be an exciting and seamless experience. Founded by <span className="font-semibold">Samson Jack</span>, our agency is built on a foundation of trust, integrity, and a genuine passion for helping people achieve their real estate dreams. Whether you’re searching for your first home, a new investment, or a place to grow your business, SJ Properties is dedicated to guiding you every step of the way.<br /><br />
+                        Our team combines deep local expertise with a commitment to personalized service, ensuring that every client feels valued and understood. We pride ourselves on transparency, professionalism, and a relentless drive to deliver results that exceed expectations. At SJ Properties, your goals become our mission.<br /><br />
+                        Discover the difference with SJ Properties—where your property journey begins.
                     </p>
                 </div>
                 <div className="md:w-1/3 flex justify-center">
@@ -94,7 +94,7 @@ export default function About() {
             <section className="mb-8">
                 <div className="bg-gray-50 rounded-lg shadow p-8 text-center">
                     <h2 className="text-2xl font-bold text-gray-800 mb-3">Contact Us</h2>
-                    <p className="text-gray-700 text-lg mb-2">Ready to start your property journey? <a href="/contact" className="text-red-500 underline">Get in touch</a> with SJProp today!</p>
+                    <p className="text-gray-700 text-lg mb-2">Ready to start your property journey? <a href="/contact" className="text-red-500 underline">Get in touch</a> with us today!</p>
                 </div>
             </section>
         </div>
