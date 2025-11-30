@@ -44,19 +44,51 @@ export default function About() {
                 </div>
             </section>
 
-                {/* Why Choose Us */}
-                <section className="mb-12">
-                    <div className="bg-white border-l-4 border-red-500 rounded-lg shadow p-8">
-                        <h2 className="text-2xl font-bold text-gray-800 mb-6">Why Choose Us?</h2>
-                        <div className="flex flex-col gap-6">
-                            <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
-                                <PromiseCard title="Trusted Agents" text="Verified and experienced agents." img="/trust.png" />
-                                <PromiseCard title="Easy Communication" text="Chat directly with owners or agents." img="/comms.jpg" />
-                                <PromiseCard title="Affordable Deals" text="Find your dream home within budget." img="/affordable.png" />
-                            </div>
+            {/* Why Choose Us */}
+            <section className="mb-12">
+                <div className="bg-white border-l-4 border-red-500 rounded-lg shadow p-8">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-6">Why Choose Us?</h2>
+                    <div className="flex flex-col gap-6">
+                        <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
+                            <PromiseCard title="Trusted Agents" text="Verified and experienced agents." img="/trust.png" />
+                            <PromiseCard title="Easy Communication" text="Chat directly with owners or agents." img="/comms.jpg" />
+                            <PromiseCard title="Affordable Deals" text="Find your dream home within budget." img="/affordable.png" />
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
+
+            {/* Our Team */}
+            <section className="mb-12">
+                <div className="bg-gray-50 rounded-lg shadow p-8">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-6">Meet Our Team</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {/* Team Member 1 */}
+                        <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+                            <img src="/team-member-1.jpg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
+                            <h3 className="text-xl font-bold text-gray-800 mb-1">Samson Jack</h3>
+                            <p className="text-red-600 font-semibold mb-2">Founder & Lead Agent</p>
+                            <p className="text-gray-700 text-sm">Expert in residential and commercial properties with over 15 years of experience. Dedicated to providing exceptional service to every client.</p>
+                        </div>
+
+                        {/* Team Member 2 */}
+                        <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+                            <img src="/team-member-2.jpg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
+                            <h3 className="text-xl font-bold text-gray-800 mb-1">Jane Smith</h3>
+                            <p className="text-red-600 font-semibold mb-2">Senior Property Manager</p>
+                            <p className="text-gray-700 text-sm">Specializes in property management and investment consulting. Ensures every client receives personalized attention and expert guidance.</p>
+                        </div>
+
+                        {/* Team Member 3 */}
+                        <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+                            <img src="/team-member-3.jpg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
+                            <h3 className="text-xl font-bold text-gray-800 mb-1">Michael Chen</h3>
+                            <p className="text-red-600 font-semibold mb-2">Residential Specialist</p>
+                            <p className="text-gray-700 text-sm">Passionate about helping families find their perfect home. Known for exceptional communication and attention to detail.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* Contact Info */}
             <section className="mb-8">

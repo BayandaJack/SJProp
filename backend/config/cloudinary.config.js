@@ -1,4 +1,6 @@
 const cloudinary = require('cloudinary').v2;
+import { CloudinaryStorage } from "multer-storage-cloudinary";
+import multer from "multer";
 
 cloudinary.config({
     cloud_name: 'dtqxbdp8p',
@@ -7,4 +9,15 @@ cloudinary.config({
     secure: true
 });
 
-module.exports = cloudinary;
+// Multer storage
+const storage = new CloudinaryStorage({
+  cloudinary,
+  params: {
+    folder: "sjprop-listings",
+    allowed_formats: ["jpg", "jpeg", "png"],
+  },
+});
+
+const upload = multer({ storage });
+
+module.exports = { cloudinary, upload };
