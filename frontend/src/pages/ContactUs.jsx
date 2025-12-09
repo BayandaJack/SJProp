@@ -1,4 +1,38 @@
+import { useState } from "react";
+
 export default function ContactUs() {
+    // business logic 
+    const [name, setName ] = useState("");
+    const [email, setEmail ] = useState("");
+    const [cellno, setCellno ] = useState("");
+    const [message, setMessage ] = useState("");
+
+    async function handleSubmit(event) {
+        console.log("Submitting contact form...");
+        event.preventDefault();
+        // prep data in object
+        const req = {
+            name,
+            email,
+            cellno,
+            message
+        }
+
+        // send mail info to backend
+        const res = await fetch('http://localhost:4000/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(req),
+        });
+        
+        console.log(res);
+        alert("Email sent successfully!");
+
+    }
+
+
     return (
         <div className="bg-white min-h-screen py-10 px-4 md:px-20 flex flex-col items-center">
             <h1 className="text-5xl font-extrabold text-center text-red-600 mb-8">Contact Us</h1>
@@ -30,10 +64,50 @@ export default function ContactUs() {
                     {/* Contact Form */}
                     <form className="bg-white rounded-lg shadow p-6 flex flex-col gap-4">
                         <h3 className="text-xl font-bold text-red-500 mb-2">Send Us a Message</h3>
-                        <input type="text" placeholder="Your Name" className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" required />
-                        <input type="email" placeholder="Your Email" className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" required />
-                        <textarea placeholder="Your Message" rows={4} className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" required></textarea>
-                        <button type="submit" className="bg-red-500 text-white font-bold py-2 rounded hover:bg-red-600 transition">Send Message</button>
+                        <input 
+                            type="text" 
+                            placeholder="Your Name" 
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" 
+                            required 
+                        />
+
+                        <input 
+                            type="email" 
+                            placeholder="Your Email" 
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" 
+                            required 
+                        />
+
+                        <input 
+                            type="cellno" 
+                            placeholder="Your CellNo" 
+                            value={cellno}
+                            onChange={(e) => setCellno(e.target.value)}
+                            className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" 
+                            required 
+                        />
+
+                        <textarea 
+                            placeholder="Your Message" 
+                            rows={4} 
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" 
+                            required
+                        >
+                        </textarea>
+
+                        <button 
+                            type="button" 
+                            className="bg-red-500 text-white font-bold py-2 rounded hover:bg-red-600 transition"
+                            onClick={handleSubmit}
+                        >
+                            Send Message
+                        </button>
                     </form>
                 </div>
             </div>

@@ -73,16 +73,16 @@ export default function About() {
 
                         {/* Team Member 2 */}
                         <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
-                            <img src="/team-member-2.jpg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
-                            <h3 className="text-xl font-bold text-gray-800 mb-1">Jane Smith</h3>
-                            <p className="text-red-600 font-semibold mb-2">Senior Property Manager</p>
-                            <p className="text-gray-700 text-sm">Specializes in property management and investment consulting. Ensures every client receives personalized attention and expert guidance.</p>
+                            <img src="/bayanda.jpeg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
+                            <h3 className="text-xl font-bold text-gray-800 mb-1">Bayanda Jack</h3>
+                            <p className="text-red-600 font-semibold mb-2">Chief Marketing Officer</p>
+                            <p className="text-gray-700 text-sm">Determined to build social media of SJProp to grow presence and reach potential buyers/sellers across the globe.</p>
                         </div>
 
                         {/* Team Member 3 */}
                         <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
                             <img src="/team-member-3.jpg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
-                            <h3 className="text-xl font-bold text-gray-800 mb-1">Michael Chen</h3>
+                            <h3 className="text-xl font-bold text-gray-800 mb-1">John Doe</h3>
                             <p className="text-red-600 font-semibold mb-2">Residential Specialist</p>
                             <p className="text-gray-700 text-sm">Passionate about helping families find their perfect home. Known for exceptional communication and attention to detail.</p>
                         </div>
