@@ -19,16 +19,21 @@ export default function ContactUs() {
         }
 
         // send mail info to backend
-        const res = await fetch('https://sjprop.onrender.com/send-email', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(req),
-        });
-        
-        console.log(res);
-        alert("Email sent successfully!");
+        try {
+
+            const res = await fetch('https://sjprop.onrender.com/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(req),
+            });
+
+            alert("Email sent successfully!");
+
+        } catch (error) {
+            console.log(error);
+        }
 
         // clear form
         setName("");

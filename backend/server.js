@@ -18,6 +18,7 @@ app.use(cors({
 
 //allows req body to go through middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //requests go through here before reaching actual endpoint
 app.use((req, res, next) => {
@@ -32,6 +33,8 @@ app.get('/', (req, res) => {
 // nodemailer
 // POST endpoint
 app.post('/send-email', async (req, res) => {
+  console.log("REQ BODY:", req.body);
+
   const { name, cellno, email, message } = req.body; // Destructure from req.body
   //console.log('Received data:', { name, email, message });
   if (!name || !cellno || !email || !message) {
