@@ -3,14 +3,8 @@ require('dotenv').config()
 
 //first get express functionality
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-
-
-//all routers
-const propertyRoutes = require('./routes/property');
-const userRoutes = require('./routes/user');
 
 //create instance of express - express app
 const app = express();
@@ -22,41 +16,6 @@ app.use(cors({
   credentials: true
 }));
 
-// TESTING PROPCTRL API
-app.get('/api/propctrl/test', async (req, res) => {
-  try {
-    const apiKey = process.env.PROPCTRL_API_KEY;
-
-    // Build Basic Auth header → ":API_KEY"
-    const authString = Buffer.from(`:${apiKey}`).toString('base64');
-
-    const response = await fetch(
-      'https://api.propctrl.com/listing/v1/admin/echo',
-      {
-        method: 'GET',
-        headers: {
-          'Authorization': `Basic ${authString}`,
-          'Accept': 'application/json'
-        }
-      }
-    );
-
-    // If PropCtrl responds with an error
-    if (!response.ok) {
-      const text = await response.text();
-      return res.status(response.status).send(text);
-    }
-
-    const data = await response.json();
-    res.json(data);
-
-  } catch (error) {
-    console.error('PropCtrl echo error:', error);
-    res.status(500).json({ error: 'Failed to reach PropCtrl' });
-  }
-});
-
-
 //allows req body to go through middleware
 app.use(express.json());
 
@@ -65,10 +24,6 @@ app.use((req, res, next) => {
     console.log(req.path, req.method);
     next(); //moves to endpoint
 });
-
-app.use('/api/properties', propertyRoutes);
-
-app.use('/api/users', userRoutes);
 
 // nodemailer
 // POST endpoint
