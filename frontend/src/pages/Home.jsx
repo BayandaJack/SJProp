@@ -14,12 +14,7 @@ export default function Home() {
                 <p className="text-lg md:text-xl text-gray-700 text-center max-w-2xl mb-6">
                     Discover a new way to find your perfect property. SJ Properties offers a seamless experience, expert advice, and a wide range of listings to help you buy, rent, or invest with confidence.
                 </p>
-                <a href="/listings" className="bg-red-500 text-white font-bold py-2 px-6 rounded hover:bg-red-600 transition">Browse Listings</a>
-            </section>
-
-            {/* Featured Listings */}
-            <section className="py-10 px-4 md:px-20">
-                <FeaturedListings />
+                <a href="https://www.property24.com/for-sale/agency/sj-prop/27908" className="bg-red-500 text-white font-bold py-2 px-6 rounded hover:bg-red-600 transition">Browse Listings</a>
             </section>
 
             {/* Why Choose Us */}
