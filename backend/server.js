@@ -25,9 +25,10 @@ app.use((req, res, next) => {
     next(); //moves to endpoint
 });
 
-app.get('/', () => {
+app.get('/', (req, res) => {
   res.send("SJProp backend is running...");
-})
+});
+
 // nodemailer
 // POST endpoint
 app.post('/send-email', async (req, res) => {
