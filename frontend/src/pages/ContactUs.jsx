@@ -18,12 +18,6 @@ export default function ContactUs() {
             message
         }
 
-        //clear the form
-        setName("");
-        setEmail("");
-        setCellno("");
-        setMessage("");
-
         // send mail info to backend
         const res = await fetch('https://sjprop.onrender.com/send-email', {
             method: 'POST',
@@ -35,6 +29,12 @@ export default function ContactUs() {
         
         console.log(res);
         alert("Email sent successfully!");
+
+        // clear form
+        setName("");
+        setEmail("");
+        setCellno("");
+        setMessage("");
 
     }
 
