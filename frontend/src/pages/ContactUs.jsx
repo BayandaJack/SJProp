@@ -25,7 +25,7 @@ export default function ContactUs() {
         setMessage("");
 
         // send mail info to backend
-        const res = await fetch('http://localhost:4000/send-email', {
+        const res = await fetch('https://sjprop.onrender.com/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
