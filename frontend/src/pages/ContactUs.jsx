@@ -114,9 +114,9 @@ export default function ContactUs() {
             <div className="w-full max-w-4xl bg-gray-100 rounded-lg shadow p-6 text-center">
                 <h2 className="text-xl font-bold text-gray-800 mb-2">Follow Us</h2>
                 <div className="flex justify-center gap-6 text-lg">
-                    <a href="#" className="text-red-500 hover:underline">Facebook</a>
-                    <a href="#" className="text-red-500 hover:underline">Instagram</a>
-                    <a href="#" className="text-red-500 hover:underline">LinkedIn</a>
+                    <a href="https://www.facebook.com/profile.php?id=61555667144473" className="text-red-500 hover:underline">Facebook</a>
+                    <a href="https://www.instagram.com/sj.prop/" className="text-red-500 hover:underline">Instagram</a>
+                    <a href="https://www.tiktok.com/@sjprop" className="text-red-500 hover:underline">Tiktok</a>
                 </div>
             </div>
         </div>

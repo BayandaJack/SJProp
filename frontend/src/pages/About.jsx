@@ -16,7 +16,7 @@ export default function About() {
                     </p>
                 </div>
                 <div className="md:w-1/3 flex justify-center">
-                    <img src="/random.png" alt="SJProp Team" className="rounded-lg shadow-lg w-full h-auto object-cover max-h-72" />
+                    <img src="/Samson.jpeg" alt="SJProp Team" className="rounded-lg shadow-lg w-full h-auto object-cover max-h-72" />
                 </div>
             </section>
 
@@ -65,9 +65,9 @@ export default function About() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {/* Team Member 1 */}
                         <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
-                            <img src="/team-member-1.jpg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
+                            <img src="/Samson.jpeg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
                             <h3 className="text-xl font-bold text-gray-800 mb-1">Samson Jack</h3>
-                            <p className="text-red-600 font-semibold mb-2">Founder & Lead Agent</p>
+                            <p className="text-red-600 font-semibold mb-2">Founder (CEO) & Lead Agent</p>
                             <p className="text-gray-700 text-sm">Expert in residential and commercial properties with over 15 years of experience. Dedicated to providing exceptional service to every client.</p>
                         </div>
 
@@ -81,10 +81,10 @@ export default function About() {
 
                         {/* Team Member 3 */}
                         <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
-                            <img src="/team-member-3.jpg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
-                            <h3 className="text-xl font-bold text-gray-800 mb-1">John Doe</h3>
-                            <p className="text-red-600 font-semibold mb-2">Residential Specialist</p>
-                            <p className="text-gray-700 text-sm">Passionate about helping families find their perfect home. Known for exceptional communication and attention to detail.</p>
+                            <img src="/random.png" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
+                            <h3 className="text-xl font-bold text-gray-800 mb-1">Chigozie Jack</h3>
+                            <p className="text-red-600 font-semibold mb-2">Chief Financial Officer</p>
+                            <p className="text-gray-700 text-sm">Responsible for the financial standing and decisions of SJProp. Passionate about operational functioning of systems</p>
                         </div>
                     </div>
                 </div>

@@ -10,9 +10,6 @@ export default function Navbar(){
                     <Link className="border border-amber-50 rounded-lg p-2" to="/">
                         Home
                     </Link>
-                    <Link className="border border-amber-50 rounded-lg p-2" to="/listings">
-                        Listings
-                    </Link>
                     <Link className="border border-amber-50 rounded-lg p-2" to="/about">
                         About
                     </Link>
