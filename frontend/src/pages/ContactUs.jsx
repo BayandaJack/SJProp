@@ -18,6 +18,12 @@ export default function ContactUs() {
             message
         }
 
+        //clear the form
+        setName("");
+        setEmail("");
+        setCellno("");
+        setMessage("");
+
         // send mail info to backend
         const res = await fetch('http://localhost:4000/send-email', {
             method: 'POST',
@@ -103,7 +109,7 @@ export default function ContactUs() {
 
                         <button 
                             type="button" 
-                            className="bg-red-500 text-white font-bold py-2 rounded hover:bg-red-600 transition"
+                            className="bg-red-500 text-white font-bold py-2 rounded hover:bg-red-600 transition hover:cursor-pointer"
                             onClick={handleSubmit}
                         >
                             Send Message

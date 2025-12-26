@@ -99,11 +99,8 @@ app.post('/send-email', async (req, res) => {
 
   try {
     const data = await transporter.sendMail(mailOptions);
-    console.log(data);
     res.json({ success: true });
-    console.log("Email sent sucessfully");
   } catch (error) {
-    console.error(error);
     res.status(500).json({ error: 'Failed to send email' });
   }
 });
