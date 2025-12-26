@@ -51,8 +51,12 @@ app.post('/send-email', async (req, res) => {
     },
   });
 
+  await transporter.verify();
+  console.log("SMTP connection verified");
+
+
   const mailOptions = {
-    from: email, // Sender name + email
+    from: '"SJProp Website" <centurion@sjprop.co.za>',
     to: 'centurion@sjprop.co.za', // Recipient
     replyTo: email,
     subject: `Property inquiry from ${name}`,
