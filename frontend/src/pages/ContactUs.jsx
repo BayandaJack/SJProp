@@ -81,6 +81,7 @@ export default function ContactUs() {
                     <a href="https://www.facebook.com/profile.php?id=61555667144473" className="text-red-500 hover:underline">Facebook</a>
                     <a href="https://www.instagram.com/sj.prop/" className="text-red-500 hover:underline">Instagram</a>
                     <a href="https://www.tiktok.com/@sjprop" className="text-red-500 hover:underline">Tiktok</a>
+                    <a href="https://www.linkedin.com/in/sj-prop-414a853a1/" className="text-red-500 hover:underline">LinkedIn</a>
                 </div>
             </div>
         </div>
