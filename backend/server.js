@@ -4,7 +4,9 @@ require('dotenv').config()
 //first get express functionality
 const express = require('express');
 const cors = require('cors');
-const nodemailer = require('nodemailer');
+const { Resend } = require('resend');
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 //create instance of express - express app
 const app = express();
@@ -41,6 +43,7 @@ app.post('/send-email', async (req, res) => {
     return res.status(400).json({ error: 'Missing fields!' });
   }
 
+  /*
   const transporter = nodemailer.createTransport({
     host: 'mail.sjprop.co.za',
     port: 465,
@@ -50,22 +53,20 @@ app.post('/send-email', async (req, res) => {
       pass: 'pJmV2Xt3zam7'//'hibp rzqp ojlv pkxq', // Use app password
     },
   });
-
-  await transporter.verify();
-  console.log("SMTP connection verified");
-
+  */
 
   const mailOptions = {
-    from: '"SJProp Website" <centurion@sjprop.co.za>',
-    to: 'centurion@sjprop.co.za', // Recipient
-    replyTo: email,
+    from: '"SJProp Website" <onboarding@resend.dev>',
+    to: ['centurion@sjprop.co.za'], // Recipient
     subject: `Property inquiry from ${name}`,
-    text: `Name: ${name}\nCellno: ${cellno}\n\n${message}`,
+    html: '<h1>If this works...</h1>'/*`Name: ${name}\nCellno: ${cellno}\n\n${message}`*/,
   };
 
   try {
-    const data = await transporter.sendMail(mailOptions);
+    const { data, error } = await resend.emails.send(mailOptions);
     res.json({ success: true });
+    console.log(data);
+    console.log(error);
   } catch (error) {
     res.status(500).json({ error: 'Failed to send email' });
   }

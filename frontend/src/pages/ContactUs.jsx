@@ -52,7 +52,7 @@ export default function ContactUs() {
                     <h2 className="text-2xl font-bold text-gray-800 mb-2">Get in Touch</h2>
                     <p className="text-gray-700 text-lg">We’d love to hear from you! Whether you have a question about our services, want to schedule a viewing, or just want to say hello, our team is ready to help.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="flex-col items-center justify-center-safe md:grid-cols-2 gap-8">
                     {/* Contact Info */}
                     <div className="flex flex-col justify-center">
                         <div className="mb-4">
@@ -72,54 +72,7 @@ export default function ContactUs() {
                             <span className="ml-2 text-gray-700">Mon-Fri: 8am - 5pm</span>
                         </div>
                     </div>
-                    {/* Contact Form */}
-                    <form className="bg-white rounded-lg shadow p-6 flex flex-col gap-4">
-                        <h3 className="text-xl font-bold text-red-500 mb-2">Send Us a Message</h3>
-                        <input 
-                            type="text" 
-                            placeholder="Your Name" 
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" 
-                            required 
-                        />
-
-                        <input 
-                            type="email" 
-                            placeholder="Your Email" 
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" 
-                            required 
-                        />
-
-                        <input 
-                            type="cellno" 
-                            placeholder="Your CellNo" 
-                            value={cellno}
-                            onChange={(e) => setCellno(e.target.value)}
-                            className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" 
-                            required 
-                        />
-
-                        <textarea 
-                            placeholder="Your Message" 
-                            rows={4} 
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
-                            className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" 
-                            required
-                        >
-                        </textarea>
-
-                        <button 
-                            type="button" 
-                            className="bg-red-500 text-white font-bold py-2 rounded hover:bg-red-600 transition hover:cursor-pointer"
-                            onClick={handleSubmit}
-                        >
-                            Send Message
-                        </button>
-                    </form>
+                    
                 </div>
             </div>
             <div className="w-full max-w-4xl bg-gray-100 rounded-lg shadow p-6 text-center">

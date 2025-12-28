@@ -67,7 +67,7 @@ export default function About() {
                         <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
                             <img src="/Samson.jpeg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
                             <h3 className="text-xl font-bold text-gray-800 mb-1">Samson Jack</h3>
-                            <p className="text-red-600 font-semibold mb-2">Founder (CEO) & Lead Agent</p>
+                            <p className="text-red-600 font-semibold mb-2">Principal (LLB | PPRE | MPRE)</p>
                             <p className="text-gray-700 text-sm">Expert in residential and commercial properties with over 15 years of experience. Dedicated to providing exceptional service to every client.</p>
                         </div>
 
@@ -76,7 +76,7 @@ export default function About() {
                             <img src="/bayanda.jpeg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
                             <h3 className="text-xl font-bold text-gray-800 mb-1">Bayanda Jack</h3>
                             <p className="text-red-600 font-semibold mb-2">Chief Marketing Officer</p>
-                            <p className="text-gray-700 text-sm">Determined to build social media of SJProp to grow presence and reach potential buyers/sellers across the globe.</p>
+                            <p className="text-gray-700 text-sm">Responsible for driving brand awareness, customer acquisition, and revenue growth through data-driven campaigns, market research, digital presence, and team leadership.</p>
                         </div>
 
                         {/* Team Member 3 */}
@@ -84,7 +84,7 @@ export default function About() {
                             <img src="/random.png" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
                             <h3 className="text-xl font-bold text-gray-800 mb-1">Chigozie Jack</h3>
                             <p className="text-red-600 font-semibold mb-2">Chief Financial Officer</p>
-                            <p className="text-gray-700 text-sm">Responsible for the financial standing and decisions of SJProp. Passionate about operational functioning of systems</p>
+                            <p className="text-gray-700 text-sm">Overseeing SJProp's financial health, including financial planning, risk management, reporting, and strategy, by managing budgets, analyzing financial data, leading finance teams, and advising on fiscal decisions</p>
                         </div>
                     </div>
                 </div>
