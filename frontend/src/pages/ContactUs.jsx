@@ -69,7 +69,7 @@ export default function ContactUs() {
                         </div>
                         <div className="mb-4">
                             <span className="font-semibold text-gray-800">Hours:</span>
-                            <span className="ml-2 text-gray-700">Mon-Fri: 8am - 5pm</span>
+                            <span className="ml-2 text-gray-700">Mon-Sun: 8am - 5pm</span>
                         </div>
                     </div>
                     
