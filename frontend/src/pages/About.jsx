@@ -10,13 +10,17 @@ export default function About() {
                 <div className="md:w-2/3 bg-gray-100 rounded-lg shadow-md p-8">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4">Who Are We?</h2>
                     <p className="text-lg text-gray-700">
-                        At <span className="font-semibold text-red-500">SJ Properties</span>, we believe that finding the perfect property should be an exciting and seamless experience. Founded by <span className="font-semibold">Samson Jack</span>, our agency is built on a foundation of trust, integrity, and a genuine passion for helping people achieve their real estate dreams. Whether you’re searching for your first home, a new investment, or a place to grow your business, SJ Properties is dedicated to guiding you every step of the way.<br /><br />
-                        Our team combines deep local expertise with a commitment to personalized service, ensuring that every client feels valued and understood. We pride ourselves on transparency, professionalism, and a relentless drive to deliver results that exceed expectations. At SJ Properties, your goals become our mission.<br /><br />
-                        Discover the difference with SJ Properties—where your property journey begins.
+                        At <span className="font-semibold text-red-500">SJ Properties</span>, we believe that finding the perfect property should be an exciting and seamless experience. Our agency is built on a foundation of trust, integrity, and genuine passion for helping people achieve their real estate dreams. Whether you’re searching for your first home, new investment, or a place to grow your business, SJ Properties is dedicated to guiding you every step of the way.<br /><br />
+                        Our team combines area specialists and experts with a commitment to personalized service, ensuring that every client feels valued and understood. We pride ourselves on transparency, honesty, professionalism, and a relentless drive to deliver results that exceed expectations. At SJ Properties, your goals become our mission.<br /><br />
+                        Discover the difference of service with SJ Properties, where your property journey begins.
                     </p>
                 </div>
-                <div className="md:w-1/3 flex justify-center">
+                <div className="md:w-1/3 flex flex-col justify-center">
                     <img src="/Samson.jpeg" alt="SJProp Team" className="rounded-lg shadow-lg w-full h-auto object-cover max-h-72" />
+                    <h1 className="text-2xl"><b>SAMSON JACK</b></h1>
+                    <h2>PRINCIPAL / DIRECTOR</h2>
+                    <h2>(LLB) (PPRE) (MPRE)</h2>
+                    <h2>MASTER PRACTITIONER IN REAL ESTATE</h2>
                 </div>
             </section>
 
@@ -40,6 +44,7 @@ export default function About() {
                         <li>Investment Consulting</li>
                         <li>Property Management</li>
                         <li>Personalized Property Search</li>
+                        <li>Free Comparative Market Analysis (CMA)</li>
                     </ul>
                 </div>
             </section>
@@ -62,30 +67,15 @@ export default function About() {
             <section className="mb-12">
                 <div className="bg-gray-50 rounded-lg shadow p-8">
                     <h2 className="text-2xl font-bold text-gray-800 mb-6">Meet Our Team</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="flex flex-row overflow-auto gap-10">
                         {/* Team Member 1 */}
                         <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
                             <img src="/Samson.jpeg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
                             <h3 className="text-xl font-bold text-gray-800 mb-1">Samson Jack</h3>
-                            <p className="text-red-600 font-semibold mb-2">Principal (LLB | PPRE | MPRE)</p>
+                            <p className="text-red-600 font-semibold mb-2">Principal</p>
                             <p className="text-gray-700 text-sm">Expert in residential and commercial properties with over 15 years of experience. Dedicated to providing exceptional service to every client.</p>
                         </div>
 
-                        {/* Team Member 2 */}
-                        <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
-                            <img src="/bayanda.jpeg" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
-                            <h3 className="text-xl font-bold text-gray-800 mb-1">Bayanda Jack</h3>
-                            <p className="text-red-600 font-semibold mb-2">Chief Marketing Officer</p>
-                            <p className="text-gray-700 text-sm">Responsible for driving brand awareness, customer acquisition, and revenue growth through data-driven campaigns, market research, digital presence, and team leadership.</p>
-                        </div>
-
-                        {/* Team Member 3 */}
-                        <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
-                            <img src="/random.png" alt="Team Member" className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-red-500" />
-                            <h3 className="text-xl font-bold text-gray-800 mb-1">Chigozie Jack</h3>
-                            <p className="text-red-600 font-semibold mb-2">Chief Financial Officer</p>
-                            <p className="text-gray-700 text-sm">Overseeing SJProp's financial health, including financial planning, risk management, reporting, and strategy, by managing budgets, analyzing financial data, leading finance teams, and advising on fiscal decisions</p>
-                        </div>
                     </div>
                 </div>
             </section>
